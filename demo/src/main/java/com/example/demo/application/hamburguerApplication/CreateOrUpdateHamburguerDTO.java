@@ -1,21 +1,16 @@
 package com.example.demo.application.hamburguerApplication;
 
-import java.util.HashSet;
-import java.util.Set;
-import java.util.UUID;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NonNull;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class CreateOrUpdateHamburguerDTO {
-    @NotBlank
-    private String name;
-    @NonNull
-    private String image;
+@NoArgsConstructor
+@AllArgsConstructor
+public class CreateOrUpdateImageDTO {
     @NotEmpty
-    private Set<UUID> ingredients = new HashSet<UUID>();   
+    public byte[] content;
 }
