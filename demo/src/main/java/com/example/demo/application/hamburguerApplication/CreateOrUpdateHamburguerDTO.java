@@ -11,7 +11,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class CreateOrUpdatePizzaDTO {
+public class CreateOrUpdateHamburguerDTO {
     @NotBlank
     private String name;
     @NonNull
