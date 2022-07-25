@@ -1,0 +1,19 @@
+{
+  "name": "burguershop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejandrocheca/BurguerShop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alejandrocheca/BurguerShop/issues"
+  },
+  "homepage": "https://github.com/alejandrocheca/BurguerShop#readme",
+  "description": ""
+}
