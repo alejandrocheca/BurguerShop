@@ -8,7 +8,7 @@ import { MenuComponent } from './main/menu/menu.component';
 import { MessageModule } from 'primeng/message';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { IngredientModule } from './ingredient/ingredient.module';
-import { HamburguerModule } from './hamburguer/hamburguer.module';
+import { HamburguerModule } from './hamburger/hamburguer.module';
 import { CommentModule } from './comment/comment.module';
 import { OrdersModule } from './orders/order.module';
 import { UserModule } from './user/user.module';
