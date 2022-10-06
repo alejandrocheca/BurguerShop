@@ -1,0 +1,31 @@
+<button class="btn btn-back btn-submit" (click)="VM.cancel()"><i class="hb hb-arrow-left"></i></button>
+<h1 class="heading-primary-main">Ingredients</h1>
+<table>
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">NAME</th>
+      <th scope="col">TYPE</th>
+      <th scope="col">PRICE</th>
+      <th scope="col">ACTION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="id">{{ VM.Elemento.id }}</td>
+      <td data-label="name">{{ VM.Elemento.name }}</td>
+      <td data-label="type">{{ VM.Elemento.type }}</td>
+      <td data-label="price">{{ VM.Elemento.price }}</td>
+      <td data-label="Action">
+        <button class="btn" [routerLink]="['edit']">
+          <i class="hb hb-pencil"></i>
+        </button>
+        <!-- <button class="btn" [routerLink]="[VM.Elemento.id]"><i class="hb hb-eye"></i></button>
+        <button class="btn" [routerLink]="[VM.Elemento.id, 'edit']"><i class="hb hb-pencil"></i></button> -->
+        <button class="btn" (click)="VM.delete(VM.Elemento.id)">
+          <i class="hb hb-trash"></i>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
