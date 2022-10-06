@@ -13,12 +13,15 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [INGREDIENT_COMPONENTS, IngredientComponent],
+  declarations: [
+    INGREDIENT_COMPONENTS, IngredientComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,
     RouterModule.forChild(routes),
     TableModule, CommonModule
+
   ],
   exports:[INGREDIENT_COMPONENTS, IngredientRecipeComponent]
 })
