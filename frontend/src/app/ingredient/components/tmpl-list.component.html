@@ -1,0 +1,28 @@
+<h1 class="heading-primary-main">Ingredients</h1>
+<a routerLinkActive="active"[routerLink]="['add']" class="btn btn-white btn-animated">ADD</a>
+<table>
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">NAME</th>
+      <th scope="col">TYPE</th>
+      <th scope="col">PRICE</th>
+      <th scope="col">ACTION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of VM.Listado">
+      <td data-label="id">{{ item.id }}</td>
+      <td data-label="name">{{ item.name }}</td>
+      <td data-label="type">{{ item.type }}</td>
+      <td data-label="price">{{ item.price }}</td>
+      <td data-label="Action">
+        <button class="btn" [routerLink]="[item.id]"><i class="pi pi-eye"></i></button>
+        <button class="btn" [routerLink]="[item.id, 'edit']"><i class="pi pi-pencil"></i></button>
+        <button class="btn" (click)="VM.delete(item.id)">
+          <i class="pi pi-trash"></i>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
