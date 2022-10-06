@@ -5,10 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './main/menu/menu.component';
 
+// PrimeNG
 import { MessageModule } from 'primeng/message';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { IngredientModule } from './ingredient/ingredient.module';
-import { HamburguerModule } from './hamburger/hamburguer.module';
+import { PizzaModule } from './hamburger/hamburger.module';
 import { CommentModule } from './comment/comment.module';
 import { OrdersModule } from './orders/order.module';
 import { UserModule } from './user/user.module';
