@@ -1,0 +1,28 @@
+
+<button class="btn btn-back btn-submit" (click)="VM.cancel()"><i class="pi pi-arrow-left"></i></button>
+<section class="login">
+  <article class="card-login ">
+    <form #miForm="ngForm" class="form" action="#">
+      <h2 *ngIf="VM.Modo == 'edit'">Edit Ingredient</h2>
+      <h2 *ngIf="VM.Modo == 'add'">Add Ingredient</h2>
+      <label *ngIf="VM.Modo == 'edit'" for="id">ID</label>
+      <input *ngIf="VM.Modo == 'edit'" id="id" type="text" name="id" [(ngModel)]="VM.Elemento.id" #id="ngModel"
+        disabled="false" required autofocus />
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" [(ngModel)]="VM.Elemento.name" #name="ngModel" required autofocus />
+      <label for="price">Price</label>
+      <input id="price" name="price" type="text" [(ngModel)]="VM.Elemento.price" #price="ngModel" required autofocus />
+      <label for="type">Type</label>
+      <select name="type" id="type" [(ngModel)]="VM.Elemento.type">
+        <option value="regular">Regular</option>
+        <option value="base">Base</option>
+        <option value="sauce">Sauce</option>
+      </select>
+        <div class="form-group">
+          <input type="button" class="btn btn-success" value="Enviar" (click)="VM.send()" [disabled]="miForm.invalid">
+          <input type="button" class="btn btn-info" value="Volver" (click)="VM.cancel()">
+        </div>
+
+    </form>
+  </article>
+</section>
