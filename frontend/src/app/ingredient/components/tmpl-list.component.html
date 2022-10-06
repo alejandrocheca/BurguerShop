@@ -17,10 +17,10 @@
       <td data-label="type">{{ item.type }}</td>
       <td data-label="price">{{ item.price }}</td>
       <td data-label="Action">
-        <button class="btn" [routerLink]="[item.id]"><i class="pi pi-eye"></i></button>
-        <button class="btn" [routerLink]="[item.id, 'edit']"><i class="pi pi-pencil"></i></button>
+        <button class="btn" [routerLink]="[item.id]"><i class="hb hb-eye"></i></button>
+        <button class="btn" [routerLink]="[item.id, 'edit']"><i class="hb hb-pencil"></i></button>
         <button class="btn" (click)="VM.delete(item.id)">
-          <i class="pi pi-trash"></i>
+          <i class="hb hb-trash"></i>
         </button>
       </td>
     </tr>
