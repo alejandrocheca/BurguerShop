@@ -1,0 +1,7 @@
+<label for="ingr" class="underline">Ingredients</label>
+<div class="ingredients">
+    <div *ngFor="let item of VM.Listado" class="tag">
+        <label for="onion">{{item.name}}</label>
+        <input type="checkbox" id="{{item.name}}" name="{{item.name}}" value="{{item.name}}">
+    </div>
+</div>
