@@ -15,5 +15,5 @@
     "url": "https://github.com/alejandrocheca/BurguerShop/issues"
   },
   "homepage": "https://github.com/alejandrocheca/BurguerShop#readme",
-  "description": ""
+  "description": "Proyecto hamburguesería creado con los lenguajes Java, JavaScript, TypeScript, HTML y CSS.\r Se utiliza los principios de SOLID para que el proyecto sea con código limpio.\r El proyecto se divide en Back-End con el lenguaje Java y el Front-End con los lenguajes JavaScript, TypeScript, HTML y CSS.\r Para crear el Back-End, se ha utilizado extensiones y comandos de Java y Spring Boot\r Para crear el Front-End se ha utilizado extensiones y comandos de Angular Cli"
 }
