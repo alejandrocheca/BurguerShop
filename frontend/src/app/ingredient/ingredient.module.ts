@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IngredientComponent, IngredientEditComponent, IngredientListComponent, IngredientRecipeComponent, IngredientsAddComponent, IngredientViewComponent, INGREDIENT_COMPONENTS } from './components/ingredient.component';
